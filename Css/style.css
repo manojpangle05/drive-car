@@ -371,6 +371,9 @@ display: none !important;
 }
 
 .carousel-item .main-bg{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
     animation: slideMe 3s ease-in !important;
     transform: scale(1.2);
 }
@@ -769,6 +772,17 @@ animation: animationcone 20s linear infinite;
     color: #eb6909;
     border: 2px solid #eb6909;
     transition: all .2s linear;
+}
+@media (max-width: 767px){
+    .car-img{
+        width: 350px;
+        position: absolute;
+        right: 10%;
+        bottom: 0px;
+    }
+    .car-img img{
+        width: 100%;
+    }
 }
 /* video-bg ends */
 
